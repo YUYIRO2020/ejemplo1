@@ -1,0 +1,261 @@
+
+body {
+    background-color: black;
+    align-items: center;
+
+}
+
+
+                                   /*BARRA NAVEGACION*/
+.barra-nav {
+    display: flex;
+    background-color: gainsboro;
+    justify-content: center;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+    margin: 15px;
+    
+}
+
+.barra-nav img {
+    width: 120px;
+    position: relative;
+    right: 18%;
+
+}
+
+.barra-nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    position: relative;
+    right: 100px;
+   
+}
+
+.barra-nav ul.nav-menu {
+    
+    
+}
+
+.barra-nav ul li {
+    padding: 10px;
+    margin: 15px;
+    background-color: gray;
+    border-radius: 10px;
+    position: relative;
+    left: 60px;
+   
+    
+}
+
+.barra-nav ul li:hover {
+    background-color: rgb(119, 101, 0);
+    color: rgb(58, 58, 58);
+}
+
+.barra-nav ul li a {
+    color: rgb(224, 245, 255);
+    text-decoration: none;
+    
+
+}
+
+.barra-nav ul li a:hover {
+    color: rgb(255, 224, 45);
+    
+}
+
+                    /*TEXTO DESCRIPCION*/
+
+.descripcion p {
+    color: rgb(136, 136, 136);
+    background-color: rgb(71, 71, 71);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    height: 35px;
+    margin: 15px;
+    border-radius: 10px; 
+    text-align: center;
+}
+
+.texto-descripcion {
+    font-size: 22px;
+    color: rgb(190, 190, 190);
+    padding: 3px 0 0 0 ;
+    
+
+}
+                    /* IMAGEN PORTADA*/
+.portada {
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.portada img {
+    width: 90%
+    ;
+}                 
+
+.portada h1 {
+    color: rgb(59, 59, 59);
+    text-align: center;
+    background-color: rgb(255, 253, 132);
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+    
+}
+
+                        /* OFERTAS */
+
+
+.ofertas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+
+
+
+.oferta1 {
+    background-color: rgb(200, 199, 201);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+
+    
+}
+
+ 
+
+.oferta1 img {
+    width: 150px;
+    height: 150px;
+
+    position: relative;
+    left: 15px;
+
+}
+
+.oferta1 .texto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10px;
+    text-decoration: none;
+}
+
+.oferta1 h1 {
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.oferta1 .boton {
+    background-color: rgb(241, 255, 44);
+    color: rgb(255, 9, 9);
+    padding: 5  10px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 5 20px;
+}
+
+.oferta1 .boton:hover {
+    background-color: rgb(231, 0, 0);
+    color: rgb(255, 230, 0);
+}
+.cont-llamada {
+    display: flex;
+    
+    
+}
+
+
+.cont-llamada a {
+    margin: 25px;
+    font-size: 30px;
+}
+
+.blog {
+    display: inline-block;
+    width: 50%;
+    color: rgb(177, 173, 176);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(90, 7, 107);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+.galeria {
+    display: inline-block;
+    width: 50%;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(6, 88, 40);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+@media  (max-width: 700px) {
+    .barra-nav  {
+        
+        
+       
+    }
+
+    .barra-nav ul li { 
+        
+        position: relative;
+        left: 40px;
+        font-size: 20px;
+        color: blueviolet;
+        background-color: rgb(165, 164, 164);
+        text-align: center;
+        
+        
+}   
+    .barra-nav img {
+        position: relative;
+        right: 10px;
+    }
+
+    .barra-nav ul li a {
+        color: black;
+        
+        
+
+    }
+
+    .oferta1 {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .oferta1 img {
+        position: relative;
+        
+    }
+    .texto-descripcion {
+        font-size: 15px;
+        text-align: center;
+    }
+}
